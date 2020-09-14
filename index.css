@@ -1,0 +1,32 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: black;
+}
+
+/* https://css-tricks.com/simple-little-use-case-vmin/ */
+/* Here all I'm saying is I need 100% of either width or height whichever is minimum */
+#game-board {
+    width: 100vmin; 
+    height: 100vmin;
+    background-color: #CCC;
+
+    /* Creating 21x21 gameboard */
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+}
+
+.snake {
+    background-color: blue;
+    border: 0.25vmin solid black;
+}
+
+.food {
+    background-color: green;
+    border: 0.25vmin solid black;
+}
