@@ -9,7 +9,7 @@ let gameOver = false;
 function main(currentTime) {
     if(gameOver) {
         if(confirm('You lose. Press Ok to continue')) {
-            window.location = '/';
+            window.location.reload();
         } else {
             return;
         }
